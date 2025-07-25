@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Notes Todo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="todo-container">
+    <h1>📝 My Sticky Note Todo List</h1>
+    <div class="input-group">
+      <input type="text" id="ta" placeholder="Add a new task..." />
+      <button id="add-task">Add</button>
+    </div>
+    <div class="controls">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+      <div class="action-group">
+        <button id="clear-completed">Clear Completed</button>
+        <button id="dark-mode-toggle">🌙</button>
+      </div>
+    </div>
+    <div id="task-board"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
